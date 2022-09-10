@@ -7,10 +7,15 @@ body {
 body,
 html {
   height: 100%;
-  background-color: #1a1a1a;
+  background: hsla(0, 0%, 4%, 1);
+  background: linear-gradient(45deg, hsla(0, 0%, 4%, 1) 0%, hsla(269, 40%, 15%, 1) 100%);
+  background: -moz-linear-gradient(45deg, hsla(0, 0%, 4%, 1) 0%, hsla(269, 40%, 15%, 1) 100%);
+  background: -webkit-linear-gradient(45deg, hsla(0, 0%, 4%, 1) 0%, hsla(269, 40%, 15%, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#0A0A0A", endColorstr="#261736", GradientType=1);
   font-family: 'Inter';
   color: #fff;
 }
-#root{
-height:100%;
+
+#root {
+  height: 100%;
 }
