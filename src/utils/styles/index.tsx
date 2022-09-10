@@ -26,13 +26,19 @@ margin:4px 0;
 `;
 export const Button = styled.button`
 width:100%;
-background-color:#2B09FF;
+background-color:#54109c;
 color:#fff;
 outline:none;
 border:none;
 font-size:14px;
 border-radius:10px;
 padding:25px;
+font-weight:500;
+transition:300ms background-color ease;
+&:hover{ 
+    cursor:pointer;
+    background-color:#6826ae;
+}
 `;
 export const Page = styled.div`
 height:100%;
