@@ -1,6 +1,9 @@
 form{
     width:800px;
 }
+.applicationName{
+    color:#6c29b4;
+}
 .nameFieldRow{
     width: 100%;
     display: flex;
@@ -13,4 +16,12 @@ form{
 }
 .loginFormPassword{
     margin: 8px 0;
+}
+.spanIfExistingOrNot{
+    text-align: center;
+}
+.fortextDecoration{
+    color:white;
+    text-decoration: underline;
+    margin-left:5px;
 }

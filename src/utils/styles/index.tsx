@@ -26,11 +26,7 @@ margin:4px 0;
 `;
 export const Button = styled.button`
 width:100%;
-<<<<<<< HEAD
 background-color:#54109c;
-=======
-background-color:#2B09FF;
->>>>>>> a702e00f64ea4852ed49751fe850dc2515cf831f
 color:#fff;
 outline:none;
 border:none;

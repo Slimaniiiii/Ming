@@ -1,14 +1,15 @@
+import { Link } from "react-router-dom";
 import { InputContainer, InputLabel, InputField, Button } from "../../utils/styles"
 import styles from "./index.module.scss";
 export const LoginForm = () => {
-  
+
     const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-       event.preventDefault();
+        event.preventDefault();
     }
 
     return (
         <form className={styles.form} onSubmit={onSubmit}>
-            <h2 style={{color:"#6c29b4"}}>Ming - Login!</h2>
+            <h2 className={styles.applicationName}>Ming - Login!</h2>
             <InputContainer>
                 <InputLabel htmlFor="email">Email</InputLabel>
                 <InputField type="email" id="email" />
@@ -19,6 +20,14 @@ export const LoginForm = () => {
                 <InputField type="password" id="password" />
             </InputContainer>
             <Button className={styles.button}>Login</Button>
+            <div className={styles.spanIfExistingOrNot}>
+                <span>Don't have an account?</span>
+                <Link to="/register">
+                    <span className={styles.fortextDecoration}>
+                        Register
+                    </span>
+                </Link>
+            </div>
         </form>
     )
 } 
